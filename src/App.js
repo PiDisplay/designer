@@ -19,7 +19,7 @@ function logData(layout, oldItem, newItem, placeholder, e, element) {
   }
   
   // The sending can be async, so it won't block performance, but the user will have updates on the screen right away
-  fetch(`${window.location.protocol}//${window.location.hostname}:3010/save`,
+  fetch('/api/save',
     {
       method: 'POST',
       mode: 'cors',
