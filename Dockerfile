@@ -1,11 +1,6 @@
 # Build Stage
 FROM node:12-buster-slim AS builder
 
-# Install tools
-# RUN apt-get update \
-#     && apt-get install -y build-essential \
-#     && apt-get install -y python3
-
 # Create app directory
 WORKDIR /app
 
