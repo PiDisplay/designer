@@ -51,5 +51,5 @@ jobs:
                 --cache-from "type=local,src=/tmp/.buildx-cache" \
                 --cache-to "type=local,dest=/tmp/.buildx-cache" \
                 --platform ${{matrix.platform}} \
-                --tag ${{ secrets.DOCKER_CONTAINER_USERNAME }}/umbrui-designer:$BRANCH \
+                --tag ${{ secrets.DOCKER_CONTAINER_USERNAME }}/designer:$BRANCH \
                 --output "type=registry" ./
