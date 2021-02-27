@@ -36,7 +36,7 @@ class UmbrUI extends React.Component {
     // layout is an array of objects, see the demo for more complete usage
     const layout = [
       {i: 'header', x: 0, y: 0, w: 3, h: 1, static: true},
-      {i: 'tor', x: 0, y: 1, w: 3, h: 1, minW: 3, maxW: 3},
+      {i: 'torURL', x: 0, y: 1, w: 3, h: 1, minW: 3, maxW: 3},
       {i: 'maxSend', x: 0, y: 2, w: 1, h: 1},
       {i: 'maxReceive', x: 1, y: 2, w: 1, h: 1},
       {i: 'activeChannels', x: 2, y: 2, w: 1, h: 1},
@@ -46,7 +46,7 @@ class UmbrUI extends React.Component {
     return (
       <GridLayout className="layout" layout={layout} cols={3} rowHeight={60} width={600} isResizable={false} compactType={'horizontal'} onDragStop={logData}>
         <div key="header">Design your own UmbrUI</div>
-        <div key="tor"><p className="heading">Tor URL</p><p className="content">reallylongurlthattakesmuchspaceandneedsitsownrow</p></div>
+        <div key="torURL"><p className="heading">Tor URL</p><p className="content">reallylongurlthattakesmuchspaceandneedsitsownrow</p></div>
         <div key="maxSend"><p className="heading">Max Send</p><p className="content">1K Sats</p></div>
         <div key="maxReceive"><p className="heading">Max Receive</p><p className="content">1K Sats</p></div>
         <div key="activeChannels"><p className="heading">Active Channels</p><p className="content">0</p></div>
