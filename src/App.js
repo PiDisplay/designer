@@ -46,12 +46,12 @@ class UmbrUI extends React.Component {
     return (
       <GridLayout className="layout" layout={layout} cols={3} rowHeight={60} width={600} isResizable={false} compactType={'horizontal'} onDragStop={logData}>
         <div key="header">Design your own UmbrUI</div>
-        <div key="tor"><p class="heading">Tor URL</p><p class="content">reallylongurlthattakesmuchspaceandneedsitsownrow</p></div>
-        <div key="maxSend"><p class="heading">Max Send</p><p class="content">1K Sats</p></div>
-        <div key="maxReceive"><p class="heading">Max Receive</p><p class="content">1K Sats</p></div>
-        <div key="activeChannels"><p class="heading">Active Channels</p><p class="content">0</p></div>
-        <div key="forward"><p class="heading">24H Forward</p><p class="content">0</p></div>
-        <div key="syncProgress"><p class="heading">Sync progress</p><p class="content">99%</p></div>
+        <div key="tor"><p className="heading">Tor URL</p><p className="content">reallylongurlthattakesmuchspaceandneedsitsownrow</p></div>
+        <div key="maxSend"><p className="heading">Max Send</p><p className="content">1K Sats</p></div>
+        <div key="maxReceive"><p className="heading">Max Receive</p><p className="content">1K Sats</p></div>
+        <div key="activeChannels"><p className="heading">Active Channels</p><p className="content">0</p></div>
+        <div key="forward"><p className="heading">24H Forward</p><p className="content">0</p></div>
+        <div key="syncProgress"><p className="heading">Sync progress</p><p className="content">99%</p></div>
       </GridLayout>
     )
   }
