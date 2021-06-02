@@ -22,5 +22,5 @@ COPY --from=builder /app /app
 # Change directory to '/app' 
 WORKDIR /app
 
-EXPOSE 3000
+EXPOSE 3010
 CMD [ "yarn", "start" ]
